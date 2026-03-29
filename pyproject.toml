@@ -1,0 +1,28 @@
+[project]
+name = "simple-agent"
+version = "1.0.0"
+description = "Tool-calling agents (Math + Text-to-SQL) with FastAPI and OpenAI"
+requires-python = ">=3.12"
+dependencies = [
+    # Core API
+    "fastapi",
+    "uvicorn[standard]",
+    "gunicorn",
+    "python-multipart",
+    # Configuration and validation
+    "python-dotenv",
+    "pydantic",
+    # LLM client
+    "openai",
+    # Console/logging helpers
+    "rich",
+    # Token estimation
+    "tiktoken",
+    # Database (SQL Agent)
+    "sqlalchemy",
+    "psycopg2-binary",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
