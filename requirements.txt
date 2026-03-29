@@ -1,0 +1,21 @@
+# Core API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Configuration and validation
+python-dotenv
+pydantic
+
+# LLM client
+openai
+
+# Console/logging helpers
+rich
+
+# Optional but useful for token estimation utilities
+tiktoken
+
+# Database (SQL Agent)
+sqlalchemy
+psycopg2-binary
