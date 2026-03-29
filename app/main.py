@@ -15,6 +15,7 @@ load_dotenv()
 
 from app.routers.chat import router as chatrouter
 from app.routers.sql_chat import router as sqlrouter
+from app.routers.arena import router as arenarouter
 from app.agents.simple_agent import SimpleAgent
 from app.agents.sql_agent import SimpleSQLAgent
 from app.services.db_service import DatabaseService
@@ -90,6 +91,7 @@ app.add_middleware(
 
 app.include_router(chatrouter)
 app.include_router(sqlrouter)
+app.include_router(arenarouter)
 
 @app.get("/", tags=["home"])
 def message():
