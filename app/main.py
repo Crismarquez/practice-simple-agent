@@ -137,7 +137,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="localhost",
-        port=8000,
+        port=5000,
         workers=1,  # Single worker for development (can increase for production)
         timeout_keep_alive=120,  # Increased timeout for long-running operations
         limit_concurrency=100,  # Maximum number of concurrent connections
